@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "schmur.asynbo.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "DisableBushSlowAndDamageSweetBerryBushMixin",
+    "ExampleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "asynbo",
+	"version": "${version}",
+	"name": "ASYNBO",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/asynbo/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"schmur.asynbo.ASYNBO"
+		],
+		"client": [
+			"schmur.asynbo.ASYNBOClient"
+		]
+	},
+	"mixins": [
+		"asynbo.mixins.json",
+		{
+			"config": "asynbo.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"accessWidener": "asynbo.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

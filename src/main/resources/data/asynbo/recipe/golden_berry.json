@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#S#",
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:gold_nugget",
+        "S": "minecraft:sweet_berries"
+    },
+    "result": {
+        "id": "asynbo:golden_berry",
+        "count": 1
+    }
+}
