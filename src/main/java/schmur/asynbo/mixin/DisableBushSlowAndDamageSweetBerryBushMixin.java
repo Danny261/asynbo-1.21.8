@@ -21,7 +21,7 @@ public class DisableBushSlowAndDamageSweetBerryBushMixin {
         if (entity instanceof LivingEntity livingEntity) {
 
 
-            if (EnchantmentHelper
+            if (livingEntity.getWorld().getRegistryManager().getOptionalEntry(ModEnchantment.BERRY_SQUEEZER).isPresent() && EnchantmentHelper
                     .getEnchantments(livingEntity.getEquippedStack(EquipmentSlot.FEET)).getEnchantments()
                     .contains(livingEntity.getWorld().getRegistryManager().getOptionalEntry(ModEnchantment.BERRY_SQUEEZER).get())) {;
 
