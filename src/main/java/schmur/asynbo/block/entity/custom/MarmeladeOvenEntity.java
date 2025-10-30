@@ -1,4 +1,4 @@
-package schmur.asynbo.block.entity.custom;
+/*package schmur.asynbo.block.entity.custom;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -34,3 +34,4 @@ public class MarmeladeOvenEntity extends BlockEntity implements ExtendedScreenHa
         return null;
     }
 }
+*/

@@ -1,4 +1,4 @@
-package schmur.asynbo.block.entity;
+/*package schmur.asynbo.block.entity;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
@@ -41,3 +41,4 @@ public class ModBlocks {
         });
     }
 }
+*/

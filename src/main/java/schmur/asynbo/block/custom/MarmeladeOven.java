@@ -1,4 +1,4 @@
-package schmur.asynbo.block.custom;
+/*package schmur.asynbo.block.custom;
 
 import com.mojang.serialization.MapCodec;
 import net.minecraft.block.BlockEntityProvider;
@@ -76,3 +76,5 @@ public class MarmeladeOven extends BlockWithEntity implements BlockEntityProvide
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 }
+
+     */
