@@ -7,7 +7,8 @@
 # Roadmap
 - [x] Berry Squeezer functionality
 - [x] Craftable Golden Berrys
-- [ ] Some sort of Scythe to harvest a field of Berrys at once
+- [x] Golden berry bushes
+- [ ] Some sort of Scythe to harvest a field of Berries at once
 - [ ] Marmelade crafting in a custom pot
 - [ ] Throwable marmelade jars that create a slimy surface on walls that are climbable like vines
 - [ ] Berry block decorations

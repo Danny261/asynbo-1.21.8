@@ -3,13 +3,13 @@
 	"id": "asynbo",
 	"version": "${version}",
 	"name": "ASYNBO",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "ASYNBO - A Simple Yet Needed Berry Overhaul",
 	"authors": [
-		"Me!"
+		"Schmur"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Danny261"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/asynbo/icon.png",

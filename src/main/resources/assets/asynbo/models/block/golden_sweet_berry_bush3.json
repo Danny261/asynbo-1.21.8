@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "asynbo:block/golden_sweet_berry_bush3"
+  }
+}

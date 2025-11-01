@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.minecraft.registry.Registries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import schmur.asynbo.block.ModBlocks;
 import schmur.asynbo.enchantment.ModEnchantment;
 import schmur.asynbo.util.ModCustomTrades;
 
@@ -26,5 +27,6 @@ public class ASYNBO implements ModInitializer {
         ModItems.initialize();
         ModEnchantment.registerModEnchantmentEffects();
         ModCustomTrades.registerModCustomTrades();
+        ModBlocks.initialize();
 	}
 }
