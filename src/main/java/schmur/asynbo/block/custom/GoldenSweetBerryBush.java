@@ -32,6 +32,12 @@ public class GoldenSweetBerryBush extends SweetBerryBushBlock {
         return ActionResult.PASS_TO_DEFAULT_BLOCK_ACTION;
 
     }
+
+    @Override
+    public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state) {
+        return false;
+    }
+
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         int i = state.get(AGE);

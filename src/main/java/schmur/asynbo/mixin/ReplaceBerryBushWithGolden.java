@@ -21,7 +21,7 @@ public class ReplaceBerryBushWithGolden {
         // Check if bush is about to reach age 3
         if (currentAge == 2) {
             // 1 in 500 chance
-            if (random.nextInt(5) == 0) {
+            if (random.nextInt(500) == 0) {
                 // Replace with golden bush at age 3
                 world.setBlockState(pos, ModBlocks.GOLDEN_SWEET_BERRY_BUSH.getDefaultState().with(SweetBerryBushBlock.AGE, 3), 3);
                 ci.cancel(); // Cancel the original method

@@ -3,6 +3,8 @@
 
 + Craft "Golden Berrys" using 8 regular Berries surrounding a Gold Ingot.
 + Put "Berry Squeezer" on your shoes to "squeeze trough" Berry bushes
++ 1/500 chance of berry bushes turning into golden ones
++ 
 
 # Roadmap
 - [x] Berry Squeezer functionality
