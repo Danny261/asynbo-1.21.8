@@ -1,11 +1,12 @@
 {
-	"required": true,
-	"package": "schmur.asynbo.mixin.client",
-	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "schmur.asynbo.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ExampleClientMixin",
+    "HarvesterSwingOffsetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

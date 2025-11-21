@@ -1,14 +1,18 @@
 package schmur.asynbo;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
+import schmur.asynbo.item.Harvester; // add import for custom item
 
 import java.util.function.Function;
 
@@ -31,8 +35,20 @@ public class ModItems {
             Item::new,
             new Item.Settings().food(new FoodComponent.Builder().nutrition(7).saturationModifier(1.4F).build())
     );
+
+    public static final Item HARVESTER = register(
+            "harvester",
+            Harvester::new, // use the custom Harvester constructor so its use method is called
+            new Item.Settings().tool(ToolMaterial.NETHERITE, BlockTags.CROPS, 6f, 0,0f)
+    );
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
                 .register((itemGroup) -> itemGroup.add(ModItems.GOLDEN_BERRY));
+        //ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FOOD_AND_DRINK)
+        //                .register((itemGroup) -> itemGroup.accept(ModItems.GOLDEN_BERRY));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(ModItems.HARVESTER));
+        //ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+        //		.register((itemGroup) -> itemGroup.accept(ModItems.HARVESTER));
     }
 }
