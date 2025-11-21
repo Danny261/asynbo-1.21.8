@@ -60,7 +60,7 @@ public class Harvester extends Item {
                     IntProperty Age = SweetBerryBushBlock.AGE;
                     int age = state.get(SweetBerryBushBlock.AGE);
                     if (age > 1) { //für berry core die drop chance
-                        if (world.random.nextInt(50) == 0) {
+                        if (world.random.nextInt(1500) == 0) {
                             dropStack(world, pos, new ItemStack(ModItems.BERRY_CORE));
                         }
                         else {

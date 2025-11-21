@@ -78,7 +78,7 @@ public class ReplaceBerryBushWithGolden {
     private void modifyBushSoCoreCanDrop(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit, CallbackInfoReturnable<ActionResult> cir) {
         int age = state.get(SweetBerryBushBlock.AGE);
         if (age > 1) {
-            if (world.random.nextInt(50) == 0) {
+            if (world.random.nextInt(1500) == 0) {
                 dropStack(world, pos, new ItemStack(ModItems.BERRY_CORE));
             }
             boolean bl;
