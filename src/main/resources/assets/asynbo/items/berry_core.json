@@ -1,0 +1,6 @@
+{
+  "model":{
+    "type": "minecraft:model",
+    "model": "asynbo:item/berry_core"
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ccA",
+        "c /",
+        "  /"
+    ],
+    "key": {
+        "c": "minecraft:copper_ingot",
+        "A": "asynbo:berry_core",
+        "/": "minecraft:stick"
+    },
+    "result": {
+        "id": "asynbo:harvester",
+        "count": 1
+    }
+}

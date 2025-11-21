@@ -12,6 +12,7 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import schmur.asynbo.item.Harvester; // add import for custom item
 
 import java.util.function.Function;
@@ -35,11 +36,16 @@ public class ModItems {
             Item::new,
             new Item.Settings().food(new FoodComponent.Builder().nutrition(7).saturationModifier(1.4F).build())
     );
+    public static final Item BERRY_CORE = register(
+            "berry_core",
+            Item::new,
+            new Item.Settings().maxCount(1).rarity(Rarity.EPIC)
+    );
 
     public static final Item HARVESTER = register(
             "harvester",
             Harvester::new, // use the custom Harvester constructor so its use method is called
-            new Item.Settings().tool(ToolMaterial.NETHERITE, BlockTags.CROPS, 6f, 0,0f)
+            new Item.Settings().tool(ToolMaterial.NETHERITE, BlockTags.CROPS, 6f, 0,0f).rarity(Rarity.EPIC)
     );
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK)
@@ -50,5 +56,7 @@ public class ModItems {
                 .register((itemGroup) -> itemGroup.add(ModItems.HARVESTER));
         //ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
         //		.register((itemGroup) -> itemGroup.accept(ModItems.HARVESTER));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
+                .register((itemGroup) -> itemGroup.add(ModItems.BERRY_CORE));
     }
 }
