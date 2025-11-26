@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "asynbo:block/golden_berry_vines",
+    "texture": "asynbo:block/golden_berry_vines"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 15.5],
+      "to": [16, 16, 15.5],
+      "faces": {
+        "north": { "uv": [0, 0, 16, 16], "texture": "#texture" },
+        "south": { "uv": [0, 0, 16, 16], "texture": "#texture" }
+      }
+    }
+  ]
+}
+

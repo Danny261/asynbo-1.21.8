@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "asynbo:block/berry_block"
+    }
+  }
+}

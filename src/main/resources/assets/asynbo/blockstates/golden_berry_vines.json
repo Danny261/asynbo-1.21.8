@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "facing=north": { "model": "asynbo:block/golden_berry_vines" },
+    "facing=south": { "model": "asynbo:block/golden_berry_vines", "y": 180 },
+    "facing=west": { "model": "asynbo:block/golden_berry_vines", "y": 270 },
+    "facing=east": { "model": "asynbo:block/golden_berry_vines", "y": 90 }
+  }
+}
+

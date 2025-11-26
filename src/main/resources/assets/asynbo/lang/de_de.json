@@ -1,12 +1,21 @@
 {
-  "item.asynbo.golden_berry": "Blinkbeerchen",
+  "item.asynbo.golden_berry": "GoldBeere",
 
   "item.asynbo.harvester": "Squichel",
 
-  "block.asynbo.golden_sweet_berry_bush": "Blinkbeerenbusch",
+  "block.asynbo.golden_sweet_berry_bush": "Goldbeerenbusch",
 
   "item.asynbo.berry_core": "Beerenkern",
 
+  "item.asynbo.marmelade_glass": "Marmeladen Glas",
 
-  "leckmeineeier.ficken": "Beerenkriecher"
+  "block.asynbo.berry_block": "Beerenblock",
+
+  "block.asynbo.golden.berry_block": "Goldbeerenblock",
+
+  "block.asynbo.berry_vines": "Beerenranken",
+
+  "block.asynbo.golden.berry_vines": "Goldbeerenranken",
+
+  "leckmeineeier.ficken": "Beerdurchenquetshungsverzauberung"
 }

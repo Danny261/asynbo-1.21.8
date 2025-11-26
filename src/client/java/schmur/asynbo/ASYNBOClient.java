@@ -12,5 +12,9 @@ public class ASYNBOClient implements ClientModInitializer {
 
 		// Register the golden sweet berry bush to use cutout rendering for transparency
          BlockRenderLayerMap.putBlock(ModBlocks.GOLDEN_SWEET_BERRY_BUSH, BlockRenderLayer.CUTOUT);
+         BlockRenderLayerMap.putBlock(ModBlocks.BERRY_BLOCK, BlockRenderLayer.CUTOUT_MIPPED);
+         BlockRenderLayerMap.putBlock(ModBlocks.BERRY_VINES, BlockRenderLayer.CUTOUT);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLDEN_BERRY_BLOCK, BlockRenderLayer.CUTOUT_MIPPED);
+        BlockRenderLayerMap.putBlock(ModBlocks.GOLDEN_BERRY_VINES, BlockRenderLayer.CUTOUT);
 	}
 }

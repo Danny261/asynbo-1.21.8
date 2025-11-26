@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": "minecraft:sweet_berries"
+  },
+  "result": {
+    "id": "asynbo:berry_block",
+    "count": 4
+  }
+}

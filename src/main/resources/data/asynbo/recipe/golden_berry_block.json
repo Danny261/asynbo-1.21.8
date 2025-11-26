@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "S": "asynbo:golden_berry"
+  },
+  "result": {
+    "id": "asynbo:golden_berry_block",
+    "count": 4
+  }
+}

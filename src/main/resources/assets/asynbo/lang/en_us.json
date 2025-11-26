@@ -7,5 +7,15 @@
 
   "item.asynbo.berry_core": "Berry Core",
 
+  "item.asynbo.marmelade_glass": "Marmelade Jar",
+
+  "block.asynbo.berry_block": "Berry Block",
+
+  "block.asynbo.golden.berry_block": "Golden Berry Block",
+
+  "block.asynbo.berry_vines": "Berry Vines",
+
+  "block.asynbo.golden.berry_vines": "Golden Berry Vines",
+
   "leckmeineeier.ficken": "Berry Squeezer"
 }

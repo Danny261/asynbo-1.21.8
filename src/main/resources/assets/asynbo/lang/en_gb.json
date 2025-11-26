@@ -1,7 +1,21 @@
 {
-  "item.asynbo.golden_berry": "Duke Dazzleberry",
+  "item.asynbo.golden_berry": "Golden Berry",
 
-  "block.asynbo.golden_sweet_berry_bush": "Lord Twinklebush",
+  "item.asynbo.harvester": "Squythe",
 
-  "leckmeineeier.ficken": "Sir Squeakalot"
+  "block.asynbo.golden_sweet_berry_bush": "Golden Berry Bush",
+
+  "item.asynbo.berry_core": "Berry Core",
+
+  "item.asynbo.marmelade_glass": "Marmelade Jar",
+
+  "block.asynbo.berry_block": "Berry Block",
+
+  "block.asynbo.golden.berry_block": "Golden Berry Block",
+
+  "block.asynbo.berry_vines": "Berry Vines",
+
+  "block.asynbo.golden.berry_vines": "Golden Berry Vines",
+
+  "leckmeineeier.ficken": "Berry Squeezer"
 }

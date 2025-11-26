@@ -32,7 +32,7 @@ public class Harvester extends Item {
         PlayerEntity user = context.getPlayer();
 
         // Only run server-side
-        if (world.isClient) return ActionResult.PASS;
+        if (world.isClient()) return ActionResult.PASS;
 
         // Null check for player
         if (user == null) return ActionResult.PASS;

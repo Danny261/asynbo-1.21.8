@@ -17,16 +17,16 @@ import schmur.asynbo.enchantment.ModEnchantment;
 @Mixin(SweetBerryBushBlock.class)
 public class DisableBushSlowAndDamageSweetBerryBushMixin {
     @WrapMethod(method = "onEntityCollision")
-    public void asynbo$disableDamage(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, Operation<Void> original) {
+    public void asynbo$disableDamage(BlockState state, World world, BlockPos pos, Entity entity, EntityCollisionHandler handler, boolean bl, Operation<Void> original) {
         if (entity instanceof LivingEntity livingEntity) {
 
 
-            if (livingEntity.getWorld().getRegistryManager().getOptionalEntry(ModEnchantment.BERRY_SQUEEZER).isPresent() && EnchantmentHelper
+            if (livingEntity.getEntityWorld().getRegistryManager().getOptionalEntry(ModEnchantment.BERRY_SQUEEZER).isPresent() && EnchantmentHelper
                     .getEnchantments(livingEntity.getEquippedStack(EquipmentSlot.FEET)).getEnchantments()
-                    .contains(livingEntity.getWorld().getRegistryManager().getOptionalEntry(ModEnchantment.BERRY_SQUEEZER).get())) {;
+                    .contains(livingEntity.getEntityWorld().getRegistryManager().getOptionalEntry(ModEnchantment.BERRY_SQUEEZER).get())) {;
 
             } else {
-                original.call(state, world, pos, entity, handler);
+                original.call(state, world, pos, entity, handler, bl);
             }
         }
         }

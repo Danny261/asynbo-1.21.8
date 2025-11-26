@@ -22,7 +22,7 @@ public class ModCustomTrades {
                         // so i can later enchant it using the ModEnchantment which i get by...
                         ItemStack berrySqueezerBook = new ItemStack(Items.ENCHANTED_BOOK);
 
-                        entity.getWorld().getRegistryManager()
+                        entity.getEntityWorld().getRegistryManager()
                                 .getOptionalEntry(ModEnchantment.BERRY_SQUEEZER)
                                 .ifPresent(enchantment -> {
                                     Object2IntOpenHashMap<RegistryEntry<Enchantment>> enchantments = new Object2IntOpenHashMap<>();
